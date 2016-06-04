@@ -1,0 +1,478 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SIMPLE-RESUME-CV
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% INSTRUCTIONS FOR COMPILING THIS DOCUMENT ("CV.tex")
+%% TEX ---(XeLaTeX)---> PDF:
+%%
+%% Method 1: Use latexmk for fully automated document generation:
+%%   latexmk -xelatex "CV.tex"
+%%   (add the -pvc switch to automatically recompile on changes)
+%%
+%% Method 2: Use XeLaTeX directly:
+%%   xelatex "CV.tex"
+%%   (run multiple times to resolve cross-references if needed)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\documentclass[a4paper,10pt,oneside]{article}
+%\documentclass[letterpaper,10pt,oneside]{article}
+
+% Do not stop on errors during compilation.
+\nonstopmode
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{CV-Preamble.tex}
+\usepackage{nopageno}
+% CV Info (to be customized).
+\newcommand{\CVTitle}{Shane Deiley Resume}
+\newcommand{\CVNote}{Resume Compiled on May 7}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={Shane Deiley},
+pdfsubject={},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+bookmarks=true,
+unicode=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\tracingall
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\title{Shane Deiley}
+
+\begin{subtitle}
+7011 W Western Reserve Rd, Canfield, OH 44406
+\par
+\href{mailto:deileyshane@outlook.com}
+{\textbf{deileyshane@outlook.com}}
+\,\BulletSymbol\,
+\,(330)\,550-9949
+\,\BulletSymbol\,
+\href{http://www.github.com/sdeiley}
+{\textbf{http://www.github.com/sdeiley}}
+\end{subtitle}
+
+\begin{body}
+
+
+%%%%%%%%%%%%%%%
+%% Summary   %%
+%%%%%%%%%%%%%%%
+
+\section{Objective}
+{Objective}
+{PDF:Objective}
+
+Lifelong learned and problem solver looking for software engineering opportunities to expand skill set and solve difficult problems with data-driven and analytic solutions.
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\section{Education}
+{Education}
+{PDF:Education}
+
+\href{http://engineering.wustl.edu/Pages/home.aspx}
+{\textbf{Washington University in Saint Louis}},
+St. Louis, Missouri, USA
+\par
+Bachelor of Science Candidate in 
+\href{http://cse.wustl.edu/Pages/default.aspx}
+{Computer Science}
+\hfill
+\DatestampYMD{2012}{8}{15} --
+\DatestampYMD{2016}{5}{17}
+\begin{detail}
+Minor in \href{http://wumath.wustl.edu}{Mathematics}
+\BulletItem
+Cumulative GPA: 3.65 / 4.0
+%\BulletItem
+%Expected Graduation: May 2016
+\BulletItem
+Deans List: Fall 2012, Fall 2013, Spring 2014, Spring 2016
+\end{detail}
+
+\EntryGap
+\textit{Relevant Coursework}
+\par
+Artificial Intelligence and Machine Learning, Data Mining, Algorithms and Data Structures, Object-oriented Programming, Probability and Statistics, Statistical Modeling, Web Development, and more
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Work EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Work Experience}
+{Work Experience}
+{PDF:WorkExperience}
+
+\href{http://www.microsoft.com/en-us/default.aspx}
+{\textbf{Microsoft Corporation}},
+Seattle, Washington, USA
+\par
+Software Development Engineer, OSG
+\hfill
+\DatestampYMD{2016}{07}{25} -- Present
+\begin{detail}
+\BulletItem
+Description:
+SDE in Operating Systems Group.
+\BulletItem
+Responsibilities:
+Various.
+\end{detail}
+
+\href{http://www.microsoft.com/en-us/default.aspx}
+{\textbf{Microsoft Corporation}},
+Seattle, Washington, USA
+\par
+Software Development Engineering Intern, MPSIT
+\hfill
+\DatestampYMD{2015}{05}{18} --
+\DatestampYMD{2015}{08}{12}
+\begin{detail}
+\BulletItem
+Project:
+Data Pipeline Design/Construction and Anomaly Alerting
+\BulletItem
+Supervisor:
+\href{https://www.linkedin.com/pub/kevin-mcclintock/4/590/805}{Kevin McClintock}
+\BulletItem
+Description:
+Utilized various Azure technologies (Sql, Blob Storage, ServiceBus Queue, Cloud Services, Anomaly Detection) to implement a data pipeline for anomaly detection alerting on product signing data.
+\BulletItem
+Responsibilities:
+Create SSIS for ETL process, structure a series of cloud services to retrieve, format, and send data to an anomaly detection api, parse the results, and alert anomalous data.
+\end{detail}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% RESEARCH EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Research Experience}
+{Research Experience}
+{PDF:ResearchExperience}
+
+\href{http://cse.wustl.edu/}
+{\textbf{Washington University Department of Computer Science}}
+\par
+Undergraduate Research Student
+\hfill
+\DatestampYMD{2015}{08}{25} --
+\DatestampYMD{2016}{05}{01} (researh ongoing)
+\begin{detail}
+\BulletItem
+Project:
+Guassian Processes for Sorghum Biomass Yield Prediction
+\BulletItem
+Supervisor:
+\href{http://www.cse.wustl.edu/~garnett/}{Dr. Roman Garnett} and Partner: Chip Schaff
+\BulletItem
+Description:
+Implemented and tested gaussian process extensions to the public GPML matlab repository.  Added extensions for multi-task learning.  Using model-generated test data, predictions of growth in multiple weather classified seasons were accurate after just 20 days of training.
+\end{detail}
+
+\href{http://reu.cse.wustl.edu/reu/Welcome.html}
+{\textbf{Washington University Computer Science Research Experience for Undergraduates}}
+\par
+Undergraduate Research Student, Computer Science Department
+\hfill
+\DatestampYMD{2014}{05}{15} --
+\DatestampYMD{2014}{12}{20}
+\begin{detail}
+\BulletItem
+Project:
+Parallel Data Structures
+\BulletItem
+Supervisor:
+\href{http://www.cse.wustl.edu/~kunal/}{Dr. Kunal Agrawal} and Partner: Alex Jones, USC
+\BulletItem
+Description:
+Implemented and augmented an order-maintenance data structure supporting \textit{O(1)} time queries and \textit{O(1)} amortized time inserts to be utilized in parallel applications for race-condition detection.  Early results indicate mere constant slowdown when on-the-fly race detection is enabled.
+\end{detail}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Personal Technical Projects %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Personal
+\newline Technical
+\newline Projects}
+{Personal Technical Projects}
+{PDF:TechnicalProjects}
+
+\textbf{Bagged and Boosted Decision Trees},
+\textit{Matlab}
+\begin{detail}
+\BulletItem
+Implemented an ID3 decision tree and utilized it in random forest and boosted tree implementations
+\BulletItem
+Achieved an classification accuracy of 88\% beating the professor's implementation
+\end{detail}
+
+\EntryGap
+\textbf{Game Development},
+\textit{C++}
+\begin{detail}
+\BulletItem
+Designed a multi-functional game for the command line enabling users to play full implementations of Reversi, Nine Almonds, or Magic Square
+\end{detail}
+
+\EntryGap
+\textbf{Topic Modeling for Classification},
+\textit{Python \& NumPy}
+\begin{detail}
+\BulletItem
+Compared implementations of latent Dirichlet allocation (LDA) and non-negative matrix factorization (NMF) in text topic modeling qualitatively
+\BulletItem
+Analyzed the performance of a classifier using the topics as the label space
+\end{detail}
+
+\EntryGap
+\textbf{Deep Learning - Artificial Neural Networks},
+\textit{Matlab}
+\begin{detail}
+\BulletItem
+Created an artificial neural network for binary classification
+\BulletItem
+Utilized classic forward and backward propagation (gradient descent) algorithms for training
+\end{detail}
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+%% Technical Skills %%
+%%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Technical\newline
+Skills}
+{Technical Skills}
+{PDF:TechnicalSkills}
+
+\textbf{Programming Languages and Software}
+\par
+\begin{detail}
+\BulletItem
+{\TeX}, {\LaTeX}, Matlab, Mathematica, R, Python, Java, Hadoop, Hive, Pig, Impala, C/C\#/C++, .NET, Cilk, Web Development, MySQL, T-SQL, Sql Server, Azure Sql, Azure Storage, Azure ML, Azure Cloud Services, and Visual Studio, 
+\end{detail}
+
+\EntryGap
+\textbf{Communication}
+\begin{detail}
+\BulletItem
+Extensive experience w/ Technical Writing and pair-programming; Excellent at public speaking and sales
+\end{detail}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Awards and Honors %%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Awards \&\newline
+Honors}
+{Awards \& Honors}
+{PDF:AwardsHonors}
+
+\textbf{Yahoo! Case Competition Finalist}
+\hfill
+\DatestampYMD{2012}{11}{18}
+\begin{detail}
+\BulletItem
+Chosen to present in class-wide case competition to freshman class and Google, Inc. representatives 
+\BulletItem 
+Proposed advertising solutions and design changes for Yahoo, Inc. utilizing user data
+\end{detail}
+
+\EntryGap
+\textbf{To Write Love on Her Arms Panelist}
+\hfill
+\DatestampYMD{2014}{11}{15}
+\begin{detail}
+\BulletItem
+Selected by Washington University campus organization T.W.L.O.H.A. to represent the student perspective on a panel about suicide and mental health on campus
+\BulletItem
+Spoke to a large audience alongside a licensed psychiatrist, a professor of anthropology, and a professor of psychology
+\end{detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Service and Community Involvement %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Community Service}
+{Community Service}
+{PDF:CommunityService}
+
+\href{http://www.missionstl.org}
+{\textbf{Mission St. Louis}}, Job and Leadership Training Program
+\hfill
+\DatestampYMD{2014}{05}{08} --
+\DatestampYMD{2014}{09}{15}
+\par
+Mentor
+\begin{detail}
+\BulletItem
+Guided two formerly convicted males through the process of getting their driver's license
+\BulletItem
+Encouraged them as they set monthly goals and aided them to achieve them
+\BulletItem
+Supported them through difficult times like finding a job and enduring emotional stress
+\end{detail}
+
+\EntryGap
+\textbf{Computer Science Tutor}, CSE 502N
+\hfill
+\DatestampYMD{2015}{1}{10} --
+\DatestampYMD{2015}{5}{1}
+\par
+Tutor and Teaching Assistant
+\begin{detail}
+\BulletItem
+Helped struggling students with C++ programming assignments and data structure and algorithm theory
+\BulletItem
+Tutored students that needed extra help outside of my normal TA responsibilities
+\end{detail}
+
+%%%%%%%%%%%%%%%%
+%% Activities %%
+%%%%%%%%%%%%%%%%
+
+\section
+{Activities}
+{Activities}
+{PDF:Activities}
+
+\href{http://reslife.wustl.edu}
+{\textbf{Residential Adviser}}, Washington University Residential Life
+\hfill
+\DatestampYMD{2014}{08}{08} --
+\DatestampYMD{2016}{05}{20}
+\par
+Freshman RA
+\begin{detail}
+\BulletItem
+Trained to create and foster a community that champions diversity and inclusion.
+\BulletItem
+Mentored 44 freshman academically and experientially by living with them and supporting them through various academic and emotional difficulties.
+\BulletItem
+Coordinated numerous 300+ person events with a staff of 16.
+\BulletItem
+Counseled and supported students in extremely difficult situations such as experiencing suicidal ideation and being a victim of sexual violence.
+\end{detail}
+
+\EntryGap
+\textbf{Cru}, Christian Campus Group
+\hfill
+\DatestampYMD{2012}{8}{24} --
+\DatestampYMD{2016}{5}{01}
+\par
+Director of Discipleship
+\begin{detail}
+\BulletItem
+Created a bible study in an attempt to create community amongst Christians in my dorm.
+\BulletItem
+Led other leaders in Cru to encourage them to be more proactive to underclassman, and responded to concerns about fostering new relationships.
+\BulletItem
+Learned the importance of considering a plurality of views and how to engage with them in meaningful ways.
+\end{detail}
+
+\EntryGap
+\textbf{Strongman}
+\hfill
+\DatestampYMD{2015}{10}{12} -- Current
+\par
+Recreational Strength Athlete
+\begin{detail}
+\BulletItem
+Compete locally in strongman competitions in which barbaric strength events result in points, and the competitor with the most points wins.
+\BulletItem
+1st Place, Show Me Strength Challenge, Heavyweight, 2014
+\end{detail}
+
+%%%%%%%%%%%%%%%%
+%% REFERENCES %%
+%%%%%%%%%%%%%%%%
+
+%\section
+%{References}
+%{References}
+%{PDF:References}
+
+%\textbf{Dr. Kunal Agrawal}
+%\par
+%Professor of Computer Science and Engineering
+%\begin{detail}
+%Washington University in Saint Louis   
+%\par
+%Department of Computer Science and Engineering
+%\par
+%1 Brookings Drive, Box 1045, Saint Louis, Missouri 63105, USA
+%\par
+%\href{mailto:kunal@wustl.edu}
+%{kunal@wustl.edu}
+%\,\BulletSymbol\,
+%\,(314)\,935-4838
+%\end{detail}
+
+%\EntryGap
+%\textbf{Dr. Roman Garnett}
+%\par
+%Professor of Computer Science and Engineering
+%\begin{detail}
+%Washington University in Saint Louis
+%\par
+%Department of Computer Science and Engineering
+%\par
+%1 Brookings Drive, Box 1045, Saint Louis, Missouri 63105, USA
+%\par
+%\href{mailto:garnett@wustl.edu}
+%{garnett@wustl.edu}
+%\,\BulletSymbol\,
+%\,(314)\,935-7302
+%\end{detail}
+\end{body}
+
+%%%%%%%%%%%
+% CV NOTE %
+%%%%%%%%%%%
+
+%\begin{flushright}
+%\scriptsize%
+%[\textit{\CVNote}]%
+%\hspace{2.0mm}\null
+%\end{flushright}
+
+%\label{LastPage}~
+\end{document}
